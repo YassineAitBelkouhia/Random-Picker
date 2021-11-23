@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Subject Picker</title>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <!-- Start Button Page -->
+      <button onclick="handleStart()" id="startBtn" class="startBtn">
+        START
+      </button>
+
+      <!-- Add Student form page -->
+      <h1 id="headingText" style="display: none" class="heading">
+        Add Students names and SUBJECTS !
+      </h1>
+      <form id="form" style="display: none" class="formContainer">
+        <div class="formGroup">
+          <label for="name">Student's Name:</label>
+          <input id="studentName" name="name" type="text" />
+        </div>
+        <div class="formGroup">
+          <label for="subject">Subject:</label>
+          <input id="studentSubject" name="subject" type="text" />
+        </div>
+        <div class="btnGroup">
+          <img
+            onclick="handleAdd()"
+            class="iconBtn"
+            src="./assets/add.png"
+            alt=""
+          />
+          <img
+            style="display: none"
+            id="listBtn"
+            onclick="handelList()"
+            class="iconBtn"
+            src="./assets/list.png"
+            alt=""
+          />
+          <img
+            onclick="handleRandom()"
+            class="iconBtn"
+            src="./assets/random.png"
+            alt=""
+          />
+        </div>
+      </form>
+
+      <!-- Student's list page -->
+
+      <table
+        style="display: none"
+        id="studentsTable"
+        class="studentsTable"
+      ></table>
+
+      <!-- final list page  -->
+      <table
+        style="display: none"
+        id="finalListContainer"
+        class="finalListContainer"
+      ></table>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="table2excel.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

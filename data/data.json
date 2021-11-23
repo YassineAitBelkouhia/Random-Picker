@@ -1,0 +1,40 @@
+{
+  "Students": [
+    {
+      "fullName": "Yassine Ait Belkouhia",
+      "subject": "AWS",
+      "id": 1
+    },
+    {
+      "fullName": "Hamza Azouzi",
+      "subject": "React.js",
+      "id": 2
+    },
+    {
+      "fullName": "Azedine Hanouni",
+      "subject": "Firebase",
+      "id": 3
+    },
+    {
+      "fullName": "Nouredine Nefzaoui",
+      "subject": "RESTful APIs",
+      "id": 4
+    },
+    {
+      "fullName": "Takreem Meer",
+      "subject": "Freelance",
+      "id": 5
+    },
+    {
+      "fullName": "Gadi Ashraf",
+      "subject": "Three.js",
+      "id": 6
+    },
+    {
+      "fullName": "Asbah Ibrahim",
+      "subject": "Data Science",
+      "id": 7
+    }
+  ],
+  "AssignedStudents": []
+}
